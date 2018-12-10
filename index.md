@@ -1,9 +1,9 @@
 ---
 layout: default
-title: paka99 github.io
+title: main page
 navbar: false
 ---
 
 # {{ page.title }}
 
-Hi there
+반갑습니다 ^^
