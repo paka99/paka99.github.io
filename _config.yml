@@ -31,8 +31,8 @@ description: >- # this means to ignore newlines until "baseurl:"
   개발을 하면서 겪었던 각종 삽질 및 고충/고민, 나름의 해결 과정을 기록합니다. 
   이곳엔 스냅샷은 존재하지않고 히스토리만 존재하기 때문에 많은분께 큰 도움은 안될 수 도있습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-# url: "https://paka99.github.io" # 실서비스 Host url
-url: "localhost" # 개발용 Host url
+url: "https://paka99.github.io" # 실서비스 Host url
+# url: "localhost" # 개발용 Host url
 github_username:  paka99
 
 cover: "/assets/header_image.jpg"
@@ -55,7 +55,7 @@ jekyll-archives:
     tag: '/tag/:name/'
 
 # Disqus comments
-disqus_shortname: rolunoa
+disqus_shortname: paka99-github-io
 
 # Build settings (기본 세팅)
 #markdown: kramdown
