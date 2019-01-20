@@ -1,3 +1,42 @@
-theme: jekyll-theme-cayman
-title: Mocha의 Github 홈페이지입니다~! :)
-description: 이것저것 넣어두고 정리는 안하게 될 Archive같은 곳입니다.
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Mocha 블로그
+email: rolunoa@gmail.com
+description: >- # this means to ignore newlines until "baseurl:"
+  이것저것 넣어두고 정리는 안하게 될 Archive같은 곳입니다.
+  개발을 하면서 겪었던 각종 삽질 및 고충/고민, 나름의 해결 과정을 기록합니다. 
+  이곳엔 스냅샷은 존재하지않고 히스토리만 존재하기 때문에 많은분께 큰 도움은 안될 수 도있습니다.
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://paka99.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+github_username:  paka99
+
+# Build settings
+markdown: kramdown
+theme: minima
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# The following items will not be processed, by default. Create a custom list
+# to override the default setting.
+# exclude:
+#   - Gemfile
+#   - Gemfile.lock
+#   - node_modules
+#   - vendor/bundle/
+#   - vendor/cache/
+#   - vendor/gems/
+#   - vendor/ruby/
