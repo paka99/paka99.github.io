@@ -13,6 +13,17 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
+
+# External gems
+# See http://ixti.net/software/2013/01/28/using-jekyll-plugins-on-github-pages.html for making `jekyll archives` work.
+gems:
+  - jekyll-archives # Sorry, not GitHub pages friendly!
+  - jekyll-sitemap
+  - jekyll-paginate
+
+exclude:
+  - "/vendor/"
+
 title: Mocha 블로그
 email: rolunoa@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -20,18 +31,42 @@ description: >- # this means to ignore newlines until "baseurl:"
   개발을 하면서 겪었던 각종 삽질 및 고충/고민, 나름의 해결 과정을 기록합니다. 
   이곳엔 스냅샷은 존재하지않고 히스토리만 존재하기 때문에 많은분께 큰 도움은 안될 수 도있습니다.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://paka99.github.io/" # the base hostname & protocol for your site, e.g. http://example.com
+# url: "https://paka99.github.io" # 실서비스 Host url
+url: "localhost" # 개발용 Host url
 github_username:  paka99
 
+cover: "/assets/header_image.jpg"
+logo: "/assets/logo.png"
 # Build settings
 markdown: kramdown
-theme: minima
-plugins:
-  - jekyll-feed
+paginate: 5
+paginate_path: "/page:num/"
+inter_post_navigation: false
+highlightjs_theme: "monokai-sublime"
+
+# Archive settings (see https://github.com/jekyll/jekyll-archives/)
+jekyll-archives:
+  enabled:
+    - categories
+    - tags
+  layout: 'archive'
+  permalinks:
+    category: '/category/:name/'
+    tag: '/tag/:name/'
+
+# Disqus comments
+disqus_shortname: rolunoa
+
+# Build settings (기본 세팅)
+#markdown: kramdown
+#theme: minima
+#plugins:
+  # - jekyll-feed
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
+# 기본 테마에 의한 exclude
 # exclude:
 #   - Gemfile
 #   - Gemfile.lock
@@ -40,3 +75,34 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+
+social:
+  - name: Facebook
+    icon: facebook
+    username: rolunoa
+    url: https://www.facebook.com/rolunoa
+    desc: Friend me on Facebook
+    share: true
+
+  - name: GitHub
+    icon: github
+    username: paka99
+    url: https://github.com/paka99
+    desc: Fork me on GitHub
+    share: false
+
+# Social sharing protocols
+# These are for automatically generating sharing metadata for FB and Twitter
+# OS Protocol is for sharing the source of your site, if you're interested. For more, see osprotocol.com
+protocols:
+    fb_image: "/assets/logo.png"
+    fb_image_width: 612
+    fb_image_height: 605
+    fb_image_type: "image/png"
+
+    twitter_image: "/assets/logo.png"
+
+    os_repo: "https://github.com/paka99/paka99.github.io"
+    os_rcs_type: "git"
+    os_src: "git@github.com:paka99/paka99.github.io.git"
