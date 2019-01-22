@@ -4,14 +4,20 @@ title: About
 permalink: /about/
 ---
 
-<img src="{{ site.baseurl }}/assets/profile-placeholder.gif" title="Profile Picture" class="profile">
+<img src="{{ site.baseurl }}/assets/about/mocha_about_profile.png" title="alttext" class="profile">
 
-Centrarium is a custom theme for Jekyll, made by [Ben Centra][bencentra] for his own blog. He'd be humbled if you liked it enough to use it as well! Installation and configuration instructions can be found in the [GitHub repository](https://github.com/bencentra/centrarium).
+# 블로그 소개
+개발을 하면서 겪었던 각종 삽질 및 고충/고민, 나름의 해결 과정을 기록해놓았습니다.
+이곳엔 스냅샷은 존재하지않고 히스토리만 존재하기 때문에 많은분께 큰 도움은 안될 수 도있습니다.
 
-This page is a good place to write about yourself, your project, your product, or whatever it is your site is for. You can replace the image above, or you can get rid of it entirely. 
+# Mocha 소개
+서울에 살고 있으며 영화를 좋아하고 상대방의 히스토리를 듣는것을 좋아합니다.
 
-You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/). And you can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+직업은 개발자이고 검색 데이터 연동에 관련된 일을 하고 있습니다. 
 
-[centrarium]: https://github.com/bencentra/centrarium
+
+
+powered by [jekyll][jekyll] [Ben Centra][bencentra]
+
 [bencentra]: http://bencentra.com
 [jekyll]: https://github.com/jekyll/jekyll
