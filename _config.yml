@@ -35,7 +35,7 @@ url: "https://paka99.github.io" # 실서비스 Host url
 # url: "localhost" # 개발용 Host url
 github_username:  paka99
 
-cover: "/assets/header_image.jpg"
+cover: "/assets/mocha_blog_main.png"
 logo: "/assets/logo.png"
 # Build settings
 markdown: kramdown
